@@ -1,8 +1,79 @@
 /*
 id => #
 id can only have a single value and be used once per page
+most specific selector
+
+-------------------------------------------------------------------------------------
 
 class => .
 class can accept multiple values and be used broadly throughout
+
+-------------------------------------------------------------------------------------
+
+attribute:
+examples include but aren't limited to href and src
+- href:
+[href] {
+    color: magenta;
+}
+this would target all elements with an href attribute and set it equal to that color
+
+- src:
+img src='/images/seasons/cold/winter.jpg'>
+img[src*='winter'] {
+  height: 50px;
+}
+img[src*='summer'] {
+  height: 100px;
+}
+
+-------------------------------------------------------------------------------------
+
+pseudo-class:
+p:hover or p:focus or p:visited etc
+
+-------------------------------------------------------------------------------------
+
+chaining:
+h1.special {
+
+}
+this code would select on the <h1> elements with a class of special
+if a <p> element also had a class of special the rule would not style the paragraph
+
+-------------------------------------------------------------------------------------
+
+nested elements:
+
+HTML:
+<ul class='main-list'>
+  <li> ... </li>
+  <li> ... </li>
+  <li> ... </li>
+</ul>
+
+CSS:
+.main-list li {
+ 
+}
+
+note that li elements in the main-list class have greater specificity so changes
+there will be override that of a regular li
+
+-------------------------------------------------------------------------------------
+
+multiple selectors:
+h1 {
+  font-family: Georgia;
+}
+ 
+.menu {
+  font-family: Georgia;
+}
+
+h1, 
+.menu {
+  font-family: Georgia;
+}
 */
 
