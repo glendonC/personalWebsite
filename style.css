@@ -1,4 +1,8 @@
-
+* {
+  margin: 0px; /*orders text top right*/
+  padding: 0px;
+  box-sizing: border-box;
+}
 
 body {
   background-color: rgb(211,222,220);
@@ -16,11 +20,21 @@ body {
   text-decoration: none;
 }
 
+/*Style for nav bar - About Me, Current Projects, Future Goals*/
 .nav-links li {
-  list-style: none;
+  color: #5f5f79;
+  font-size: 18px;
+  text-decoration: none;
 }
 
+.nav-links li:hover { 
+	color: #03a9f4;  
+}
 
+a {
+  color:inherit; /*removes hyperlink color*/
+  text-decoration: inherit; /* no underline */
+}
 
 /*
 id => #
