@@ -1,3 +1,6 @@
+html {
+  font-size: 18px;
+}
 * {
   margin: 0px; /*orders text top right*/
   padding: 0px;
@@ -27,6 +30,7 @@ body {
   text-decoration: none;
 }
 
+/*Changes color when hovering over nav bar*/
 .nav-links li:hover { 
 	color: #03a9f4;  
 }
@@ -36,6 +40,13 @@ a {
   text-decoration: inherit; /* no underline */
 }
 
+#uva-logo figcaption{
+  /*em => relative font size to parent*/
+  /*font-size: 1.5em;*/
+
+  /*rem => relative font size to root element (html)*/
+  font-size: 1.5rem;
+}
 /*
 id => #
 id can only have a single value and be used once per page
